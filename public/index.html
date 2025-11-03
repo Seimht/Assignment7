@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+  Name: Seim Habte
+  Date: 2025-11-02
+  CSC 372-01
+  Jokebook UI
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jokebook</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1 id="page-title">jokebook</h1>
+
+
+    <section>
+      <h2 class="section-title">random</h2>
+      <div id="random-joke" class="joke"></div>
+      <button id="refresh-random" type="button">refresh</button>
+    </section>
+
+  
+    <section>
+      <h2 class="section-title">categories</h2>
+      <button id="load-categories" type="button">load categories</button>
+      <ul id="category-list"></ul>
+    </section>
+
+    <section>
+      <h3>search category</h3>
+      <form id="category-search">
+        <label for="search-input">category</label>
+        <input id="search-input" placeholder="e.g., funnyjoke" required />
+        <button type="submit">view</button>
+      </form>
+    </section>
+    
+
+    <section id="category-view" hidden>
+      <h2 class="section-title">
+        category: <span id="category-name"></span>
+      </h2>
+
+      <label for="cat-limit">limit</label>
+      <select id="cat-limit">
+        <option value="">all</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+      </select>
+      <button id="reload-category" type="button">reload</button>
+
+      <div id="category-jokes"></div>
+    </section>
+
+   
+    <section>
+      <h2 class="section-title">add</h2>
+      <form id="add-form">
+        <label for="add-category">category</label>
+        <input id="add-category" required />
+
+        <label for="add-setup">setup</label>
+        <input id="add-setup" required />
+
+        <label for="add-delivery">delivery</label>
+        <input id="add-delivery" required />
+
+        <button type="submit">add</button>
+      </form>
+
+      <div id="add-result"></div>
+    </section>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

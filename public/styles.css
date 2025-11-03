@@ -1,0 +1,10 @@
+/*
+  Name: Seim Habte
+  Date: 2025-11-02
+  CSC 372-01
+  Styles
+*/
+body { font-family: system-ui, -apple-system, sans-serif; margin: 16px; line-height: 1.4; }
+h1, h2, h3 { color: #222; }
+.section-title { margin-top: 24px; }
+.joke { margin: 8px 0; }
